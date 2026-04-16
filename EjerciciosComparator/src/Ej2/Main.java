@@ -22,12 +22,16 @@ public class Main {
         // 1. Ordenar por nombre (alfabético)
         Collections.sort(socios, new ComparadoraNombres());
         System.out.println("\nPor nombre (alfabético):");
-        socios.forEach(System.out::println);
+        for (Socio socioEnLista : socios) {
+        	System.out.println(socioEnLista);
+        }
         
         // 2. Ordenar por edad (mayor a menor)
         Collections.sort(socios, new ComparadoraEdad());
         System.out.println("\nPor edad (mayor a menor):");
-        socios.forEach(System.out::println);
+        for (Socio socioEnLista : socios) {
+        	System.out.println(socioEnLista);
+        }
         
     }
 }
